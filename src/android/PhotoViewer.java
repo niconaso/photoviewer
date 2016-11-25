@@ -49,7 +49,7 @@ public class PhotoViewer extends CordovaPlugin {
     }
 
     protected void launchActivity() throws JSONException {
-        Intent i = new Intent(this.cordova.getActivity(), com.sarriaroman.PhotoViewer.PhotoActivity.class);
+        Intent i = new Intent(this.cordova.getActivity(), ar.com.fluxit.PhotoViewer.PhotoActivity.class);
 
         i.putExtra("url", this.args.getString(0));
         i.putExtra("title", this.args.getString(1));
