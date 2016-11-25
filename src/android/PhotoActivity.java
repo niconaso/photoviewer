@@ -1,4 +1,4 @@
-package com.sarriaroman.PhotoViewer;
+package ar.com.fluxit.PhotoViewer;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 import android.app.Activity;
@@ -137,7 +137,7 @@ public class PhotoActivity extends Activity {
 	private void loadImage() {
 		if( imageUrl.startsWith("http") ) {
 		Picasso.with(this)
-				.load(imageUrl)				
+				.load(imageUrl)
 				.into(photo, new com.squareup.picasso.Callback() {
 					@Override
 					public void onSuccess() {
